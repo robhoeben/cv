@@ -1,0 +1,37 @@
+.c-skillset {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+}
+
+.c-skillset dt {
+    flex-basis: 50%;
+    padding-bottom: 1rem;
+    color: var(--color-b);
+    font: 1rem / 1.2 var(--font-code);
+}
+
+.c-skillset dt::after {
+    content: ':';
+}
+
+.c-skillset dd {
+    flex-basis: 50%;
+    position: relative;
+    height: 12px;
+    background: rgba(0,0,0,0.15);
+    border: 1px solid rgba(0,0,0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.c-skillset dd::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: calc(var(--skill) * 1%);
+    border-radius: 4px;
+    background: -webkit-linear-gradient(75deg,var(--color-a), var(--color-d));
+}

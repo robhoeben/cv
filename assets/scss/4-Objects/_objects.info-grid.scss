@@ -1,0 +1,20 @@
+@media (min-width:1000px){
+    .o-info-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+        grid-gap: 4rem;
+        margin-top: 5rem;
+    }
+
+    [data-grid="3-2"] {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    [data-grid="2-3"] {
+        grid-template-columns: 2fr 3fr;
+    }
+
+    .o-info-grid > * {
+        margin-top: 0;
+    }
+}

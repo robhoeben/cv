@@ -1,0 +1,28 @@
+.u-text-right {
+    text-align: right !important;
+}
+.u-text-small {
+    font-size: 0.9rem !important;
+}
+
+
+// Color helper classes
+.u-color-a {
+    color: var(--color-a) !important;
+}
+.u-color-b {
+    color: var(--color-b) !important;
+}
+.u-color-c {
+    color: var(--color-c) !important;
+}
+.u-color-d {
+    color: var(--color-d) !important;
+}
+
+.u-font-secondary {
+    font-family: var(--font-secondary);
+}
+.u-font-tertiary {
+    font-family: var(--font-tertiary);
+}

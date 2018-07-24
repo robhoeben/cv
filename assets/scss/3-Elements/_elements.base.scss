@@ -1,0 +1,88 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+ol,
+ul,
+p,
+pre,
+dl,
+dt,
+dd {
+  margin: 0;
+}
+
+p {
+  max-width: 40em;
+}
+
+/* Lobotomized owl selector */
+* + *,
+* + p,
+* + h1,
+* + h2,
+* + h3 {
+  margin-top: 2.5rem;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--color-a);
+  color: var(--color-b);
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  font: 1.4rem / 1.5 var(--font-primary);
+  background: linear-gradient(
+    70deg,
+    var(--color-negative) -20%,
+    var(--color-a) 60%,
+    var(--color-c) 220%
+  );
+}
+
+main {
+  margin: 8vw auto;
+  padding: 0 2rem;
+  max-width: 1024px;
+
+  h2, h3, h4 {
+    font-family: var(--font-tertiary);
+    color: var(--color-d);
+  }
+}
+
+a {
+  color: var(--color-b);
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--color-d);
+  }
+}
+
+blockquote {
+  border-left: 5px solid var(--color-d);
+  padding-left: 1rem;
+  margin-left: 0;
+  font: 2rem/1.5 var(--font-secondary);
+  color: var(--color-c);
+}
+
+b {
+  color: var(--color-c);
+}

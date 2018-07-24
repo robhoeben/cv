@@ -1,0 +1,15 @@
+.c-data dt {
+    font-style: italic;
+    font: 0.7em/1.5 var(--font-system);
+    color: var(--color-c);
+}
+
+.c-data dd {
+    color: var(--color-b);
+    font: 0.9em/1.5 var(--font-tertiary);
+}
+
+.c-data__sub {
+    font: 300 0.7em / 1.3 var(--font-system);
+    color: var(--color-c);
+}
