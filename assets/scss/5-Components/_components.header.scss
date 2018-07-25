@@ -1,35 +1,12 @@
-$hc1: rgba(214, 214, 233, 0.2);
-$hc2: rgba(174, 174, 238, 0.2);
-
 .c-header {
     position: relative;
     margin-top: 0;
-    margin-bottom: 3rem;
     padding: 3rem 0;
-    background-image:linear-gradient(90deg,var(--header-color) 30%, var(--color-a) 230%);
-    background: linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
-
-
-
-    border-top: 4px solid var(--color-d);
-    color: var(--color-a);
+    background: var(--color-neutral-light);
+    border-top: 4px solid var(--color-neutral-dark);
+    color: var(--color-theme-a);
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.65);
 }
-
-// .c-header::after {
-//     content: '';
-//     position: relative;
-//     bottom: calc((var(--header-border-size) + 3rem) * -1);
-//     display: block;
-//     height: var(--header-border-size);
-//     width: 100%;
-
-//     background-size: var(--header-border-size) var(--header-border-size);
-//     background-repeat: repeat-x;
-//     background-image: -webkit-linear-gradient(-45deg,var(--header-color) 25%,transparent 25%,transparent),
-//                       -webkit-linear-gradient(45deg,transparent 75%,var(--header-color) 75%);
-// }
-
 
 .c-header__title {
     max-width: 1024px;
@@ -37,7 +14,9 @@ $hc2: rgba(174, 174, 238, 0.2);
     margin-top: 0;
     padding: 0 2rem;
     font: 4.1rem/1 var(--font-secondary);
-    font-weight: 400;
+    font-family: var(--font-tertiary);
+    letter-spacing: -2px;
+    font-weight: bold;
 }
 
 .c-header__subtitle {
@@ -46,15 +25,17 @@ $hc2: rgba(174, 174, 238, 0.2);
     padding: 0 2rem;
     font-size: 1.25rem;
     font-weight: 400;
+    color: var(--color-neutral-dark);
 }
 
-// .c-header__avatar {
-//     position: absolute;
-//     bottom: calc(-0.5 * var(--avatar-size) + calc(-0.5 * var(--header-border-size)));
-//     left: calc(50% - calc(0.5 * var(--avatar-size)));
-//     border-radius: 50%;
-//     border: 6px solid var(--color-d);
-//     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-//     z-index: 1;
-//     filter: sepia(1) hue-rotate(88deg) saturate(3.5);
-// }
+.c-header-line {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    margin-top: 0;
+    height: 8px;
+    width: 100%;
+    background:
+        linear-gradient(55deg,var(--color-theme-d) 30%,transparent 30%),
+        linear-gradient(25deg,var(--color-theme-b) 60%,var(--color-theme-c) 60%);
+}

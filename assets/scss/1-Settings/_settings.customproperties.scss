@@ -1,23 +1,16 @@
 :root {
 	// Colors
-	--color-a: rgb(37, 40, 57);
-	--color-b: rgb(205, 205, 205);
-	--color-c: rgb(127, 136, 143);
-	--color-d: rgb(20, 185, 191);
-	--color-positive: rgb(250, 250, 250);
-	--color-negative: rgb(20, 20, 20);
-
+	--color-theme-a: rgb(37, 40, 57);
+	--color-theme-b: rgba(20, 185, 191);
+	--color-theme-c: rgb(255, 248, 16);
+	--color-theme-d: rgb(255, 126, 227);
+	--color-neutral-light: rgb(205, 205, 205);
+	--color-neutral-dark: rgb(127, 136, 143);
 
 	// Fonts
 	--font-system: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-	--font-primary: 'Open Sans', sans-serif;
-	--font-secondary: 'Caveat', cursive;
+	--font-primary: 'Rubik', sans-serif;
+	--font-secondary: 'Gloria Hallelujah', cursive;
 	--font-tertiary: 'Arvo', serif;
 	--font-code: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
-
-
-	// Header
-	--header-color: var(--color-b);
-	--header-border-size: 1.6rem;
-	--avatar-size: 150px;
 }

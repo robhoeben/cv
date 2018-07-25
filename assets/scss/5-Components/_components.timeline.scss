@@ -1,8 +1,8 @@
 $timeline-border-size: 4px;
 
 .timeline {
-  --timeline-color: var(--color-c);
-  margin: 2rem 0 0;
+  --timeline-color: var(--color-neutral-dark);
+  margin: 2.5rem 0 0;
   padding: 0;
 }
 
@@ -33,7 +33,7 @@ $timeline-border-size: 4px;
     height: 1.5rem;
     transform: translateX(calc(-50% + #{$timeline-border-size} / 2));
     border-radius: 50%;
-    background-image: radial-gradient(var(--color-d) 30%, var(--color-a) 30%);
+    background-image: radial-gradient(var(--color-theme-b) 30%, var(--color-theme-a) 30%);
     border: $timeline-border-size solid var(--timeline-color);
     transition: border 200ms ease;
   }
@@ -53,11 +53,11 @@ $timeline-border-size: 4px;
   }
 
   &.is-active {
-    --timeline-color: var(--color-d);
+    --timeline-color: var(--color-theme-b);
     font-size: 1.3em;
 
     & > .timeline__content {
-        transform: scale(1.1) rotate(-2deg);
+        transform: scale(1.15);
     }
   }
 }

@@ -42,25 +42,17 @@ p {
 body {
   padding: 0;
   margin: 0;
-  background: var(--color-a);
-  color: var(--color-b);
+  color: var(--color-neutral-light);
   text-shadow: 1px 2px 4px mix(rgb(19, 84, 122), black, 85%);
-  font: 1.4rem / 1.5 var(--font-primary);
-
-//   background-image:
-//     linear-gradient(
-//         90deg,
-//         transparent,
-//         var(--color-a) 90%
-//     ),
-//     linear-gradient(
-//         0deg,
-//         rgb(19, 84, 122) 0%,
-//         rgb(128, 208, 199) 100%,
-//     );
-    background: linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
-    // background: linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
-  background-attachment: scroll, fixed;
+  font: 1.3rem / 1.65 var(--font-primary);
+  background: var(--color-theme-a);
+  background:
+  linear-gradient(90deg, rgba(0, 0, 0, 0.15) 0%, var(--color-theme-a) 100%), // left to right fade
+  linear-gradient(110deg, rgba(220,0,0,0.01) 40%, rgba(0, 0, 0, 0) 40%), // lange diagonaal naar lo
+  radial-gradient(farthest-corner at 90% 80%, rgba(0,0,0,0.1) 70%, rgba(255,255,255, 0.02) 70%), // curve
+  linear-gradient(36deg, rgba(255,255,255, 0.05) 40%, rgba(235, 9, 223, 0.01) 40%),
+  linear-gradient(-82deg, var(--color-theme-a) 50%, rgba(0,0,0,0.97) 50%); // diagonaal naar ro
+  background-attachment: scroll, scroll, fixed, scroll, scroll;
 }
 
 main {
@@ -68,30 +60,39 @@ main {
   padding: 0 2rem;
   max-width: 1024px;
 
-  h2, h3, h4 {
+  & > section {
+    margin-top: 20vh;
+  }
+
+  h2 {
     font-family: var(--font-tertiary);
-    color: var(--color-d);
+    color: var(--color-theme-c);
+  }
+  h3, h4 {
+    font-family: var(--font-tertiary);
+    color: var(--color-theme-b);
   }
 }
 
 a {
-  color: var(--color-b);
+  color: var(--color-neutral-light);
 
   &:hover,
   &:active,
   &:focus {
-    color: var(--color-d);
+    color: var(--color-theme-b);
   }
 }
 
+
 blockquote {
-  border-left: 5px solid var(--color-d);
+  border-left: 5px solid var(--color-theme-a);
   padding-left: 1rem;
   margin-left: 0;
-  font: 2rem/1.5 var(--font-secondary);
-  color: var(--color-c);
+  font: 1.6rem / 1.5 var(--font-secondary);
+  color: var(--color-theme-d);
 }
 
 b {
-  color: var(--color-c);
+  color: var(--color-neutral-dark);
 }
