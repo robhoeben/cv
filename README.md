@@ -1,6 +1,6 @@
 # Curriculum Vitae van Rob Hoeben
 
-Please visit [https://robhoeben.github.io/cv](robhoeben.github.io/cv) to see my actual CV
+Please visit [robhoeben.github.io/cv](https://robhoeben.github.io/cv) to see my actual CV
 
 This is still work in progress, but if you would like to use this code you need to follow these steps:
 
