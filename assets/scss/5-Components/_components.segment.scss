@@ -1,9 +1,9 @@
-.c-segment {
-    $segment-transition-speed: 300ms;
-    $segment-perspective: 1000px;
-    $segment-rotation: 20deg;
-    $segment-easing: cubic-bezier(0.42, 0, 0, 2);
+$segment-transition-speed: 300ms;
+$segment-perspective: 1000px;
+$segment-rotation: 20deg;
+$segment-easing: cubic-bezier(0.42, 0, 0, 2);
 
+.c-segment {
     background: rgba(0,0,0,0.4);
     padding: 1.25rem;
     border-top: 1px solid var(--color-theme-c);
@@ -12,9 +12,11 @@
     transform: perspective($segment-perspective);
     transition: transform $segment-transition-speed $segment-easing;
 
+    &:hover {
+        transition: transform $segment-transition-speed $segment-easing;
+    }
     &[data-dir="left"]:hover {
         transform: perspective($segment-perspective) rotateY(-#{$segment-rotation});
-        transition: transform $segment-transition-speed $segment-easing;
     }
     &[data-dir="right"]:hover {
         transform: perspective($segment-perspective) rotateY(#{$segment-rotation});

@@ -18,19 +18,34 @@ $list-icons: (
 
 .c-list__item {
     display: flex;
-    list-style: none;
+    align-items: center;
+    // list-style: none;
     margin: 0;
-    color: var(--color-b);
+    transform: perspective(4000px);
 
     &::before {
-        content: "😊";
+        content: "•";
         padding-right: 1rem;
-        color: var(--color-b);
+    }
+
+    &::before[data-icon] {
+        content: "😊";
+        font-size: 1.4rem;
+        opacity: 0.7;
+        transform: perspective(4000px) rotate(5deg);
+        transform-origin: center center;
+        transition: all 0.25s cubic-bezier(0.19, 0.0, 0.1, 1);
+        filter: saturate(0);
     }
     @each $icon-name, $icon in $list-icons {
         &[data-icon="#{$icon-name}"]::before {
             content: "#{$icon}";
         }
+    }
+    &:hover[data-icon]::before {
+        transform: perspective(4000px) scale(1.5) rotate(-4deg);
+        transition: all 0.25s cubic-bezier(0.19, 0.0, 0.1, 1);
+        filter: saturate(1);
     }
 }
 
@@ -38,16 +53,16 @@ $list-icons: (
     margin-top: 1rem;
 }
 
-.c-list--packed .c-list__item + .c-list__item {
-    margin-top: 0.1rem;
+// Modifiers
+
+.c-list--packed {
+    .c-list__item + .c-list__item {
+        margin-top: 0.1rem;
+    }
 }
 
-.c-list--loose .c-list__item + .c-list__item {
-    margin-top: 1.5rem;
+.c-list--clean {
+    .c-list__item::before {
+        content: none;
+    }
 }
-
-
-.c-list--clean .c-list__item::before {
-    content: none;
-}
-

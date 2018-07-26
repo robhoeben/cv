@@ -33,9 +33,9 @@
     top: 0;
     z-index: 1;
     margin-top: 0;
-    height: 8px;
+    height: 6px;
     width: 100%;
     background:
-        linear-gradient(55deg,var(--color-theme-d) 30%,transparent 30%),
-        linear-gradient(25deg,var(--color-theme-b) 60%,var(--color-theme-c) 60%);
+        linear-gradient(55deg,var(--color-theme-b) 30%,transparent 30%),
+        linear-gradient(25deg,var(--color-theme-c) 60%,var(--color-theme-d) 60%);
 }
