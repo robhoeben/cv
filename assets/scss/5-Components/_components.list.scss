@@ -4,11 +4,34 @@
     padding: 0;
 }
 
+
+
+$list-icons: (
+    piano: 🎹,
+    tv: 📺,
+    game: 🎮,
+    run: 🏃,
+    chart: 📈,
+    radio: 📻,
+    photo: 📸,
+);
+
 .c-list__item {
     display: flex;
     list-style: none;
     margin: 0;
     color: var(--color-b);
+
+    &::before {
+        content: "😊";
+        padding-right: 1rem;
+        color: var(--color-b);
+    }
+    @each $icon-name, $icon in $list-icons {
+        &[data-icon="#{$icon-name}"]::before {
+            content: "#{$icon}";
+        }
+    }
 }
 
 .c-list__item + .c-list__item {
@@ -23,12 +46,8 @@
     margin-top: 1.5rem;
 }
 
-.c-list__item::before {
-    content: "•";
-    padding-right: 1rem;
-    color: var(--color-d);
-}
 
 .c-list--clean .c-list__item::before {
     content: none;
 }
+
