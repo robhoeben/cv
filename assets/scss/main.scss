@@ -8,6 +8,7 @@
 
 /* 1 SETTINGS */
 @import "1-Settings/_settings.customproperties";
+@import "1-Settings/_settings.global";
 
 
 /* 2-Tools */
@@ -24,6 +25,7 @@
 
 /* 5-Components */
 @import "5-Components/_components.data";
+@import "5-Components/_components.embed";
 @import "5-Components/_components.header";
 @import "5-Components/_components.list";
 @import "5-Components/_components.segment";

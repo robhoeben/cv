@@ -1,7 +1,7 @@
 .c-header {
     position: relative;
     margin-top: 0;
-    padding: 3rem 0;
+    padding: 8vmin 0;
     background: var(--color-neutral-light);
     border-top: 4px solid var(--color-neutral-dark);
     color: var(--color-theme-a);
@@ -9,20 +9,22 @@
 }
 
 .c-header__title {
-    max-width: 1024px;
+    box-sizing: content-box;
+    max-width: $site-max-width;
     margin: 0 auto;
     margin-top: 0;
-    padding: 0 2rem;
-    font: 4.1rem/1 var(--font-secondary);
+    padding: 0 $site-gutter;
+    font: 4.1rem / 1 var(--font-secondary);
     font-family: var(--font-tertiary);
     letter-spacing: -2px;
     font-weight: bold;
 }
 
 .c-header__subtitle {
-    max-width: 1024px;
+    box-sizing: content-box;
+    max-width: $site-max-width;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 $site-gutter;
     font-size: 1.25rem;
     font-weight: 400;
     color: var(--color-neutral-dark);
@@ -33,7 +35,7 @@
     top: 0;
     z-index: 1;
     margin-top: 0;
-    height: 6px;
+    height: 8px;
     width: 100%;
     background:
         linear-gradient(55deg,var(--color-theme-b) 30%,transparent 30%),
