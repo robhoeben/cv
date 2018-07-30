@@ -4,9 +4,9 @@ $segment-rotation: 20deg;
 $segment-easing: cubic-bezier(0.7, 0, 0.3, 1);
 
 .c-segment {
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.3);
     padding: 1.25rem;
-    border-top: 1px solid var(--color-theme-c);
+    border-top: 1px solid $color-theme-c;
     border-radius: 8px;
     word-break: break-all;
     box-shadow: 0 0 10px rgba(0,0,0,0.19), 0 2px 6px rgba(0,0,0,0.23);
@@ -36,8 +36,8 @@ $segment-easing: cubic-bezier(0.7, 0, 0.3, 1);
 
 .c-segment__header {
     margin-bottom: 2rem;
-    color: var(--color-theme-c);
-    font: 1.8rem / 1.4 var(--font-secondary);
+    color: $color-theme-c;
+    font: 1.8rem / 1.4 $font-secondary;
     font-weight: 100;
     word-break: break-word;
 }

@@ -7,8 +7,8 @@
 .c-skillset dt {
     flex-basis: 50%;
     padding-bottom: 1rem;
-    color: var(--color-neutral-dark);
-    font: 1rem / 1.2 var(--font-code);
+    color: $color-neutral-dark;
+    font: 1rem / 1.2 $font-code;
 }
 
 .c-skillset dt::after {
@@ -33,5 +33,5 @@
     height: 100%;
     width: calc(var(--skill) * 1%);
     border-radius: 4px;
-    background: -webkit-linear-gradient(75deg,var(--color-theme-a), var(--color-theme-c));
+    background: -webkit-linear-gradient(75deg,$color-theme-a, $color-theme-c);
 }

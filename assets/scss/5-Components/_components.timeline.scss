@@ -1,7 +1,7 @@
 $timeline-border-size: 4px;
+$timeline-color: $color-theme-c;
 
 .timeline {
-  --timeline-color: var(--color-theme-c);
   margin: 2.5rem 0 0;
   padding: 0;
 }
@@ -20,7 +20,7 @@ $timeline-border-size: 4px;
     top: 0;
     bottom: 0;
     left: 0;
-    background-color: var(--timeline-color);
+    background-color: $timeline-color;
     transition: background-color 200ms ease;
     opacity: 0.3;
   }
@@ -34,8 +34,8 @@ $timeline-border-size: 4px;
     height: 1.5rem;
     transform: translateX(calc(-50% + #{$timeline-border-size} / 2));
     border-radius: 50%;
-    background-image: radial-gradient(var(--color-neutral-light) 30%, var(--color-theme-a) 30%);
-    border: $timeline-border-size solid var(--timeline-color);
+    background-image: radial-gradient($color-neutral-light 30%, $color-theme-a 30%);
+    border: $timeline-border-size solid $timeline-color;
     transition: border 200ms ease;
   }
 
@@ -54,7 +54,7 @@ $timeline-border-size: 4px;
   }
 
   &.is-active {
-    // --timeline-color: var(--color-theme-b);
+    // --timeline-color: $color-theme-b;
     font-size: 1.3em;
 
     & > .timeline__content {

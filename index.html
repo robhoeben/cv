@@ -9,10 +9,14 @@
     <title>Rob Hoeben - CV</title>
     <link rel="stylesheet" href="build/css/main.min.css">
     <link href="https://fonts.googleapis.com/css?family=Arvo|Gloria+Hallelujah|Rubik" rel="stylesheet">
-
 </head>
 
 <body>
+    <!-- Notice for old browsers -->
+    <div id="outdated-notice" style="display: none; margin: 0; padding: 4vw 8vw; background: #b30000;">
+        Deze website is niet getest in Internet Explorer 11 of eerder. Door het gebruik van nieuwere technieken kan het zijn dat deze website niet goed wordt weergegeven in de verouderde browser die u gebruikt. Update uw browser voor meer veiligheid, snelheid en om deze site optimaal te kunnen gebruiken. <a href="https://browser-update.org/update.html?force_outdated=true">Browser updaten</a>.
+    </div>
+
     <header class="c-header">
         <h1 class="c-header__title">Rob Hoeben</h1>
         <h2 class="c-header__subtitle">Frontend developer</h2>
@@ -431,6 +435,12 @@
     <footer class="c-update">
         Laatst bijgewerkt: Juli 2018
     </footer>
+
+    <script>
+        if(navigator.userAgent.indexOf('MSIE')!==-1 || navigator.appVersion.indexOf('Trident/') > 0){
+            document.getElementById('outdated-notice').style.display = 'block';
+        }
+    </script>
 </body>
 
 </html>

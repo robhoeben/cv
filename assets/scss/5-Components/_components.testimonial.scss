@@ -9,12 +9,12 @@ $testimonial-easing: cubic-bezier(0.42, 0, 0, 2);
     padding: 1.5rem 1.5rem 1.5rem 2rem;
     max-width: 40rem;
     justify-self: center;
-    color: var(--color-neutral-dark);
+    color: $color-neutral-dark;
     text-shadow: 0 1px 1px rgba(20,20,20,1);
     background: rgba(0,0,0,0.36);
-    border-left: 2px solid var(--color-theme-d);
+    border-left: 2px solid $color-theme-d;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    font: 1.2rem/1.6 var(--font-secondary);
+    font: 1.2rem/1.6 $font-secondary;
     quotes: "\201C""\201D""\2018""\2019";
 
     @media (min-width:1000px){
@@ -47,7 +47,7 @@ $testimonial-easing: cubic-bezier(0.42, 0, 0, 2);
     left: -7px;
     position: relative;
     top: 33px;
-    color: var(--color-theme-d);
+    color: $color-theme-d;
     font-size: 3em;
 }
 
@@ -62,7 +62,7 @@ $testimonial-easing: cubic-bezier(0.42, 0, 0, 2);
     text-align: right;
     font-size: 2rem;
     font-style: italic;
-    color: var(--color-neutral-light);
+    color: $color-neutral-light;
 }
 
 @media (min-width:800px){
