@@ -1,14 +1,15 @@
-.u-text-right {
-    text-align: right !important;
-}
-.u-text-small {
-    font-size: 0.9rem !important;
-}
-
-
 // Color helper classes
-.u-color-theme-a {
-    color: $color-theme-a !important;
+.u-color-a {
+    color: $color-a !important;
+}
+.u-color-b {
+    color: $color-b !important;
+}
+.u-color-c {
+    color: $color-c !important;
+}
+.u-color-d {
+    color: $color-d !important;
 }
 .u-color-neutral-light {
     color: $color-neutral-light !important;
@@ -16,9 +17,15 @@
 .u-color-neutral-dark {
     color: $color-neutral-dark !important;
 }
-.u-color-theme-b {
-    color: $color-theme-b !important;
+
+
+.u-text-right {
+    text-align: right !important;
 }
+.u-text-small {
+    font-size: 0.9rem !important;
+}
+
 
 .u-font-secondary {
     font-family: $font-secondary;

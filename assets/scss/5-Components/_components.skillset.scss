@@ -9,6 +9,7 @@
     padding-bottom: 1rem;
     color: $color-neutral-dark;
     font: 1rem / 1.2 $font-code;
+    word-break: break-word;
 }
 
 .c-skillset dt::after {
@@ -19,8 +20,8 @@
     flex-basis: 50%;
     position: relative;
     height: 12px;
-    background: rgba(0,0,0,0.15);
-    border: 1px solid rgba(0,0,0, 0.2);
+    background: -webkit-linear-gradient(0deg, $color-b 10%, $color-c 30%, $color-d 85%);
+    border: 1px solid $color-a;
     border-radius: 5px;
     overflow: hidden;
 }
@@ -29,9 +30,8 @@
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     height: 100%;
-    width: calc(var(--skill) * 1%);
-    border-radius: 4px;
-    background: -webkit-linear-gradient(75deg,$color-theme-a, $color-theme-c);
+    width: calc((100 - var(--skill)) * 1%);
+    background: $color-a;
 }

@@ -2,8 +2,8 @@
     width: 100%;
     height: 8px;
     background:
-        linear-gradient(55deg,$color-theme-b 20%, transparent 40%),
-        linear-gradient(25deg,$color-theme-c 55%,$color-theme-d 75%);
+        linear-gradient(55deg,$color-b 20%, transparent 40%),
+        linear-gradient(25deg,$color-c 55%,$color-d 75%);
 }
 
 .c-header {
@@ -13,7 +13,7 @@
     padding: 8vmin 0;
     background: $color-neutral-light;
     border-top: 4px solid $color-neutral-dark;
-    color: $color-theme-a;
+    color: $color-a;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.65);
 
     &::after {

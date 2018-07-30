@@ -4,8 +4,8 @@
     font: 1.1rem / 1 $font-primary;
     text-shadow: none;
     text-align: right;
-    color: $color-theme-a;
+    color: $color-a;
     background:
-            linear-gradient(55deg,$color-theme-d 30%,transparent 30%),
-            linear-gradient(25deg,$color-theme-b 60%,$color-theme-c 60%);
+            linear-gradient(55deg,$color-d 30%,transparent 30%),
+            linear-gradient(25deg,$color-b 60%,$color-c 60%);
 }

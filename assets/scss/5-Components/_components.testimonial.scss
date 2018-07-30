@@ -12,7 +12,7 @@ $testimonial-easing: cubic-bezier(0.42, 0, 0, 2);
     color: $color-neutral-dark;
     text-shadow: 0 1px 1px rgba(20,20,20,1);
     background: rgba(0,0,0,0.36);
-    border-left: 2px solid $color-theme-d;
+    border-left: 2px solid $color-d;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     font: 1.2rem/1.6 $font-secondary;
     quotes: "\201C""\201D""\2018""\2019";
@@ -47,7 +47,7 @@ $testimonial-easing: cubic-bezier(0.42, 0, 0, 2);
     left: -7px;
     position: relative;
     top: 33px;
-    color: $color-theme-d;
+    color: $color-d;
     font-size: 3em;
 }
 

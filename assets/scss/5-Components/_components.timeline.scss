@@ -1,5 +1,5 @@
-$timeline-border-size: 4px;
-$timeline-color: $color-theme-c;
+$timeline-border-size: 3px;
+$timeline-color: $color-c;
 
 .timeline {
   margin: 2.5rem 0 0;
@@ -11,7 +11,7 @@ $timeline-color: $color-theme-c;
   align-items: flex-end;
   list-style-type: none;
   position: relative;
-  margin: 0;
+  margin: 0 0 0 0.5rem;
 
   &::before {
     content: "";
@@ -30,11 +30,11 @@ $timeline-color: $color-theme-c;
     position: absolute;
     left: 0;
     top: 1.6rem;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1rem;
+    height: 1rem;
     transform: translateX(calc(-50% + #{$timeline-border-size} / 2));
     border-radius: 50%;
-    background-image: radial-gradient($color-neutral-light 30%, $color-theme-a 30%);
+    background-image: radial-gradient($color-neutral-light 30%, $color-a 30%);
     border: $timeline-border-size solid $timeline-color;
     transition: border 200ms ease;
   }
@@ -54,18 +54,13 @@ $timeline-color: $color-theme-c;
   }
 
   &.is-active {
-    // --timeline-color: $color-theme-b;
     font-size: 1.3em;
-
-    & > .timeline__content {
-        // transform: scale(1.15);
-    }
   }
 }
 
 .timeline__content {
   margin-top: -7px;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   padding: 2rem 0;
   transition: transform 200ms ease;
   transform-origin: left center;
