@@ -2,8 +2,9 @@
     .o-info-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
-        grid-gap: 4rem;
-        margin-top: 5rem;
+        grid-gap: 6rem;
+        align-items: center;
+        margin-top: 7rem;
     }
 
     [data-grid="3-2"] {
@@ -16,5 +17,12 @@
 
     .o-info-grid > * {
         margin-top: 0;
+    }
+
+    [data-align="start"] {
+        align-self: flex-start;
+    }
+    [data-align="end"] {
+        align-self: flex-end;
     }
 }

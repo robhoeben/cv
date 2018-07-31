@@ -1,3 +1,24 @@
+// Color helper classes
+.u-color-a {
+    color: $color-a !important;
+}
+.u-color-b {
+    color: $color-b !important;
+}
+.u-color-c {
+    color: $color-c !important;
+}
+.u-color-d {
+    color: $color-d !important;
+}
+.u-color-neutral-light {
+    color: $color-neutral-light !important;
+}
+.u-color-neutral-dark {
+    color: $color-neutral-dark !important;
+}
+
+
 .u-text-right {
     text-align: right !important;
 }
@@ -6,23 +27,13 @@
 }
 
 
-// Color helper classes
-.u-color-a {
-    color: var(--color-a) !important;
-}
-.u-color-b {
-    color: var(--color-b) !important;
-}
-.u-color-c {
-    color: var(--color-c) !important;
-}
-.u-color-d {
-    color: var(--color-d) !important;
-}
-
 .u-font-secondary {
-    font-family: var(--font-secondary);
+    font-family: $font-secondary;
 }
 .u-font-tertiary {
-    font-family: var(--font-tertiary);
+    font-family: $font-tertiary;
+}
+
+.u-nowrap {
+    white-space: nowrap;
 }

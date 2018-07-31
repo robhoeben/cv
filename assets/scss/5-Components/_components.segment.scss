@@ -1,13 +1,43 @@
+$segment-transition-speed: 600ms;
+$segment-perspective: 1200px;
+$segment-rotation: 20deg;
+$segment-easing: cubic-bezier(0.7, 0, 0.3, 1);
+
 .c-segment {
-    background: rgba(6,57,60,0.25);
+    background: rgba(0,0,0,0.3);
     padding: 1.25rem;
+    border-top: 1px solid $color-c;
     border-radius: 8px;
+    word-break: break-all;
     box-shadow: 0 0 10px rgba(0,0,0,0.19), 0 2px 6px rgba(0,0,0,0.23);
+
+    @media (min-width:1000px){
+        transform: perspective($segment-perspective);
+        transition: all $segment-transition-speed $segment-easing;
+
+        &:hover {
+            transition: all $segment-transition-speed $segment-easing;
+            box-shadow: 15px 0 70px -15px rgba(0,0,0,0.6);
+        }
+        &[data-dir="left"]{
+            transform-origin: left;
+            &:hover {
+                transform: perspective($segment-perspective) rotateY(-#{$segment-rotation});
+            }
+        }
+        &[data-dir="right"]{
+            transform-origin: right;
+            &:hover {
+                transform: perspective($segment-perspective) rotateY(#{$segment-rotation});
+            }
+        }
+    }
 }
 
 .c-segment__header {
     margin-bottom: 2rem;
-    color: var(--color-d);
-    font: 2rem / 0.9 var(--font-secondary);
+    color: $color-c;
+    font: 1.8rem / 1.4 $font-secondary;
     font-weight: 100;
+    word-break: break-word;
 }
