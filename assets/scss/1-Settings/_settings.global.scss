@@ -1,7 +1,2 @@
 $site-gutter: 8vw;
 $site-max-width: 1024px;
-
-
-@function palette($color, $alpha: '1'){
-    @return hsla($color, $alpha);
-}

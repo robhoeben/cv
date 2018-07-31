@@ -10,7 +10,6 @@ $list-icons: (
 );
 
 .c-list {
-    margin-top: 1rem;
     padding: 0;
 }
 
@@ -58,5 +57,14 @@ $list-icons: (
 .c-list--clean {
     .c-list__item::before {
         content: none;
+    }
+}
+
+.c-list--inline {
+    display: inline-flex;
+
+    & .c-list__item {
+        margin-top: 0;
+        margin-right: 1rem;
     }
 }

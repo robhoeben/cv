@@ -2,7 +2,15 @@
 
 Please visit [robhoeben.github.io/cv](https://robhoeben.github.io/cv) to see my actual CV
 
-This is still work in progress, but if you would like to use this code you need to follow these steps:
+
+## Disclaimer
+
+This project is still work in progress and a lot of improvements could be made.
+
+
+## Build setup
+
+If you would like to use this code you need to follow these steps:
 
 - clone this repo
 - `npm install`
