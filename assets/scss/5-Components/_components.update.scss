@@ -1,11 +1,11 @@
 .c-update {
     position: relative;
-    padding: 3rem 3rem;
+    padding: 1.2rem 3rem;
     font: 1.1rem / 1 $font-primary;
     text-shadow: none;
     text-align: right;
-    color: $color-a;
+    color: rgba(0,0,0,0.6);
     background:
-            linear-gradient(55deg,$color-d 30%,transparent 30%),
-            linear-gradient(25deg,$color-b 60%,$color-c 60%);
+            linear-gradient(55deg,$color-b 30%,transparent 30%),
+            linear-gradient(25deg,$color-c 60%,$color-d 60%);
 }

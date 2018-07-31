@@ -62,9 +62,14 @@ $list-icons: (
 
 .c-list--inline {
     display: inline-flex;
+    flex-wrap: wrap;
 
     & .c-list__item {
         margin-top: 0;
         margin-right: 1rem;
+
+        &:first-child::before {
+            content: none;
+        }
     }
 }

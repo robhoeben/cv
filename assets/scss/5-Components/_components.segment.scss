@@ -4,7 +4,7 @@ $segment-rotation: 20deg;
 $segment-easing: cubic-bezier(0.7, 0, 0.3, 1);
 
 .c-segment {
-    background: rgba(0,0,0,0.3);
+    background: hsla(249, 8%, 0%, 0.5);
     padding: 1.25rem;
     border-top: 1px solid $color-c;
     border-radius: 8px;

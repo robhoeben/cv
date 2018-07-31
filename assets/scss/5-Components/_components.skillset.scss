@@ -19,8 +19,8 @@
 .c-skillset dd {
     flex-basis: 50%;
     position: relative;
-    height: 12px;
-    background: -webkit-linear-gradient(0deg, $color-b 10%, $color-c 30%, $color-d 85%);
+    height: 10px;
+    background: -webkit-linear-gradient(-45deg, $color-b 10%, $color-c 30%, $color-d 100%);
     border: 1px solid $color-a;
     border-radius: 5px;
     overflow: hidden;

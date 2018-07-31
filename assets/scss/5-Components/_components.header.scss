@@ -11,17 +11,22 @@
     z-index: 2;
     margin-top: 0;
     padding: 8vmin 0;
-    background: $color-neutral-light;
-    border-top: 4px solid $color-neutral-dark;
     color: $color-a;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.65);
+    border-top: 4px solid $color-neutral-dark;
+    background-color: $color-neutral-light;
+    background-image:
+        radial-gradient(farthest-corner at 10% -110%, rgba($color-neutral-light,0.4) 72%, rgba(255,255,255, 0.07) 72%), // curve
+        radial-gradient(farthest-corner at 110% -130%, rgba(0,0,0, 0.02) 65%, rgba($color-neutral-light, 0.01) 65%), // curve 2
+        linear-gradient(rgba(0,0,0,0.3) -65%, $color-neutral-light 100%); //fade
 
     &::after {
+        @include header-line;
         content: '';
         position: absolute;
         bottom: 0;
         display: block;
-        @include header-line;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
     }
 }
 
@@ -44,13 +49,14 @@
     padding: 0 $site-gutter;
     font-size: 1.25rem;
     font-weight: 400;
-    color: $color-neutral-dark;
+    color: rgba(0,0,0,0.66);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 
 .c-header-line {
+    @include header-line;
     position: fixed;
     top: 0;
     z-index: 1;
     margin-top: 0;
-    @include header-line;
 }
