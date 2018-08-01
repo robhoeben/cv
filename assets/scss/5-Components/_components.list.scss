@@ -1,12 +1,12 @@
 $list-icons: (
     piano: 🎹,
-    tv: 📺,
     game: 🎮,
+    garden: 🏡,
     run: 🏃,
     chart: 📈,
     radio: 📻,
     photo: 📸,
-    beer: 🍺
+    bbq: 🥩
 );
 
 .c-list {
@@ -57,19 +57,5 @@ $list-icons: (
 .c-list--clean {
     .c-list__item::before {
         content: none;
-    }
-}
-
-.c-list--inline {
-    display: inline-flex;
-    flex-wrap: wrap;
-
-    & .c-list__item {
-        margin-top: 0;
-        margin-right: 1rem;
-
-        &:first-child::before {
-            content: none;
-        }
     }
 }

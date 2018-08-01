@@ -1,10 +1,10 @@
-@media (min-width:1000px){
+@media (min-width:$site-mq-large){
     .o-info-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
         grid-gap: 6rem;
         align-items: center;
-        margin-top: 7rem;
+        margin-top: 14vmin;
     }
 
     [data-grid="3-2"] {

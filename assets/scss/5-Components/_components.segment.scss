@@ -5,13 +5,15 @@ $segment-easing: cubic-bezier(0.7, 0, 0.3, 1);
 
 .c-segment {
     background: hsla(249, 8%, 0%, 0.5);
+    margin-left: -1rem;
+    margin-right: -1rem;
     padding: 1.25rem;
     border-top: 1px solid $color-c;
     border-radius: 8px;
     word-break: break-all;
     box-shadow: 0 0 10px rgba(0,0,0,0.19), 0 2px 6px rgba(0,0,0,0.23);
 
-    @media (min-width:1000px){
+    @media (min-width:$site-mq-large){
         transform: perspective($segment-perspective);
         transition: all $segment-transition-speed $segment-easing;
 

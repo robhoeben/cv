@@ -1,5 +1,5 @@
 $testimonial-transition-speed: 600ms;
-$testimonial-perspective: 1000px;
+$testimonial-perspective: 900px;
 $testimonial-rotation: 20deg;
 $testimonial-easing: cubic-bezier(0.42, 0, 0, 2);
 
@@ -18,8 +18,8 @@ $testimonial-easing: cubic-bezier(0.42, 0, 0, 2);
     font: 1.2rem/1.6 $font-secondary;
     quotes: "\201C""\201D""\2018""\2019";
 
-    @media (min-width:1000px){
-        margin: 20vh -1rem;
+    @media (min-width:$site-mq-large){
+        margin: 20vmin -1rem;
     }
 }
 

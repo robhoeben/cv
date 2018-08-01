@@ -7,6 +7,7 @@
 .c-data dd {
     color: $color-neutral-light;
     font: 0.9em/1.5 $font-tertiary;
+    word-break: break-word;
 }
 
 .c-data__sub {
